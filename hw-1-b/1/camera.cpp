@@ -43,9 +43,11 @@ vec3 Camera::World_Position(const ivec2& pixel_index)
 {
     vec3 result;
     TODO;
-    int result1 = 0;
-    int result2 = 0;
-    int result3 = camera.position.x[2];
-    result = new vec3(result1, result2, result3);
+    int result1 = (pixel_index.x[0] * number_pixels[0]) + (number_pixels[0] / 2);
+    int result2 = (pixel_index.x[1] * number_pixels[1]) + (number_pixels[1] / 2);
+    int result3 = position[2];
+    result[0] = result1;
+    result[1] = result2;
+    result[2] = result3;
     return result;
 }

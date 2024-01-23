@@ -19,6 +19,7 @@ Render_World::~Render_World()
 std::pair<Shaded_Object,Hit> Render_World::Closest_Intersection(const Ray& ray) const
 {
     TODO;
+    
     return {};
 }
 
@@ -26,10 +27,12 @@ std::pair<Shaded_Object,Hit> Render_World::Closest_Intersection(const Ray& ray) 
 void Render_World::Render_Pixel(const ivec2& pixel_index)
 {
     TODO; // set up the initial view ray here
-    vec3 direc = camera.World_Position(pixel_index.x[0], pixel_index.x[1]) - camera.position;
+    vec3 direc = camera.World_Position(pixel_index) - camera.position;
+    direc = direc.normalized();
     Ray ray(camera.position, direc);
     vec3 color=Cast_Ray(ray,1);
     camera.Set_Pixel(pixel_index,Pixel_Color(color));
+    Pixel_Print();
 }
 
 void Render_World::Render()
@@ -45,11 +48,11 @@ vec3 Render_World::Cast_Ray(const Ray& ray,int recursion_depth) const
 {
     vec3 color;
     TODO; // determine the color here
-    pair<Shaded_Object,Hit> objectHit = Closest_Intersection(ray);
-    if(objectHit.second == null){
-        color = &background_shader;
+    std::pair<Shaded_Object,Hit> objectHit = Closest_Intersection(ray);
+    if(objectHit.second.dist < 0){
+        color = background_shader->Shade_Surface(this, ray, objectHit.second, objectHit.first.object->Intersection(ray, 0), objectHit.first.object->Normal(ray, objectHit.first.object->Intersection(ray, 0)));
     }else{
-        color = objectHit.first;
+        color = objectHit.first.shader->Shade_Surface();
     }
     return color;
 }
