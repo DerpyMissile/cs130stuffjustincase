@@ -1,0 +1,11 @@
+2024-01-22 23:13:42.297 [info] Extension host with pid 3413459 started
+2024-01-22 23:13:42.303 [info] Lock '/home/csmajs/hmai015/.vscode-server/data/User/workspaceStorage/e660e92d889a24dd709bf26d5fad526a/vscode.lock': Lock acquired.
+2024-01-22 23:13:42.407 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-01-22 23:13:42.426 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-01-22 23:13:42.464 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-01-22 23:13:42.464 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-01-22 23:13:42.638 [info] Eager extensions activated
+2024-01-22 23:13:42.638 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-01-22 23:13:42.639 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-01-22 23:37:33.998 [warning] [Decorations] CAPPING events from decorations provider vscode.git 2648
+2024-01-22 23:37:34.382 [warning] [Decorations] CAPPING events from decorations provider vscode.git 2648

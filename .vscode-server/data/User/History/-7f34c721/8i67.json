@@ -1,0 +1,14 @@
+{
+    "cmake.configureOnOpen": true,
+    "remote.SSH.remotePlatform": {
+        "sledge.cs.ucr.edu": "linux",
+        "cs130.cs.ucr.edu": "linux"
+    },
+    "workbench.colorTheme": "Visual Studio Dark - C++",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+    "python.condaPath": "C:\\Users\\Haocheng Mai\\anaconda3",
+    "redhat.telemetry.enabled": false
+}

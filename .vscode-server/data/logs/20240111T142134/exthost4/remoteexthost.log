@@ -1,0 +1,18 @@
+2024-01-11 14:30:09.297 [info] Extension host with pid 2803492 started
+2024-01-11 14:30:09.297 [error] Error: EEXIST: file already exists, open '/home/csmajs/hmai015/.vscode-server/data/User/workspaceStorage/e660e92d889a24dd709bf26d5fad526a/vscode.lock'
+2024-01-11 14:30:09.298 [info] Lock '/home/csmajs/hmai015/.vscode-server/data/User/workspaceStorage/e660e92d889a24dd709bf26d5fad526a/vscode.lock': Could not acquire lock, checking if the file is stale.
+2024-01-11 14:30:09.303 [info] Lock '/home/csmajs/hmai015/.vscode-server/data/User/workspaceStorage/e660e92d889a24dd709bf26d5fad526a/vscode.lock': The lock does not look stale, elapsed: 829 ms, giving up.
+2024-01-11 14:30:09.303 [error] Error: EEXIST: file already exists, open '/home/csmajs/hmai015/.vscode-server/data/User/workspaceStorage/e660e92d889a24dd709bf26d5fad526a-1/vscode.lock'
+2024-01-11 14:30:09.303 [info] Lock '/home/csmajs/hmai015/.vscode-server/data/User/workspaceStorage/e660e92d889a24dd709bf26d5fad526a-1/vscode.lock': Could not acquire lock, checking if the file is stale.
+2024-01-11 14:30:09.304 [info] Lock '/home/csmajs/hmai015/.vscode-server/data/User/workspaceStorage/e660e92d889a24dd709bf26d5fad526a-1/vscode.lock': The lock does not look stale, elapsed: 992 ms, giving up.
+2024-01-11 14:30:09.314 [info] Lock '/home/csmajs/hmai015/.vscode-server/data/User/workspaceStorage/e660e92d889a24dd709bf26d5fad526a-2/vscode.lock': Lock acquired.
+2024-01-11 14:30:09.360 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-01-11 14:30:09.423 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-01-11 14:30:09.451 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-01-11 14:30:09.451 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-01-11 14:30:09.660 [info] Eager extensions activated
+2024-01-11 14:30:09.660 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-01-11 14:30:09.660 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-01-11 17:52:14.673 [info] Extension host terminating: renderer disconnected for too long (1)
+2024-01-11 17:52:14.674 [info] Lock '/home/csmajs/hmai015/.vscode-server/data/User/workspaceStorage/e660e92d889a24dd709bf26d5fad526a-2/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2024-01-11 17:52:14.698 [info] Extension host with pid 2803492 exiting with code 0
