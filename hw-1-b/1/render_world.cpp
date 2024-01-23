@@ -26,7 +26,8 @@ std::pair<Shaded_Object,Hit> Render_World::Closest_Intersection(const Ray& ray) 
 void Render_World::Render_Pixel(const ivec2& pixel_index)
 {
     TODO; // set up the initial view ray here
-    Ray ray;
+    vec3 direc = camera.World_Position(pixel_index.x[0], pixel_index.x[1]) - camera.position;
+    Ray ray(camera.position, direc);
     vec3 color=Cast_Ray(ray,1);
     camera.Set_Pixel(pixel_index,Pixel_Color(color));
 }
@@ -46,7 +47,7 @@ vec3 Render_World::Cast_Ray(const Ray& ray,int recursion_depth) const
     TODO; // determine the color here
     pair<Shaded_Object,Hit> objectHit = Closest_Intersection(ray);
     if(objectHit.second == null){
-        color = 
+        color = &background_shader;
     }else{
         color = objectHit.first;
     }

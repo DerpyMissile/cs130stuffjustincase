@@ -43,5 +43,9 @@ vec3 Camera::World_Position(const ivec2& pixel_index)
 {
     vec3 result;
     TODO;
+    int result1 = 0;
+    int result2 = 0;
+    int result3 = camera.position.x[2];
+    result = new vec3(result1, result2, result3);
     return result;
 }
